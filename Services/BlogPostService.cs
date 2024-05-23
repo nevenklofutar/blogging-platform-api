@@ -5,7 +5,10 @@ namespace blogging_platform_api.Services
     public class BlogPostService : IBlogPostService
     {
         private IList<BlogPost> blogPosts = new List<BlogPost>()
-            { new BlogPost() { Id = 1, Title = "Title 1", Body = "Body 1" } };
+        { 
+            new BlogPost() { Id = 1, Title = "Title 1", Body = "Body 1" },
+            new BlogPost() { Id = 2, Title = "Title 2", Body = "Body 2" }
+        };
 
         public IList<BlogPost> GetAll() 
         {
